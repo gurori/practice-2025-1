@@ -3,13 +3,13 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /source
 
 # copy csproj and restore as distinct layers
-COPY Server/*.csproj ./Server/
-RUN dotnet restore
+COPY ./Server/pp.csproj ./Server/
+RUN dotnet restore "./Server/pp.csproj"
 
 # copy everything else and build app
 COPY . .
 WORKDIR /source/Server
-RUN dotnet publish -c release -o /app --no-restore
+RUN dotnet publish -c release -o /app
 
 # final stage/image
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
