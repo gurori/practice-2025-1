@@ -1,6 +1,7 @@
 using DataAccess;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.EntityFrameworkCore;
+using Server.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,8 @@ services.AddCors(option =>
         policy.AllowAnyMethod();
     });
 });
+
+services.AddRepositories();
 
 services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(configuration.GetConnectionString(nameof(AppDbContext)))
