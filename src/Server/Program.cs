@@ -28,6 +28,8 @@ services.AddCors(option =>
 
 services.AddRepositories();
 
+services.AddServices();
+
 services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(configuration.GetConnectionString(nameof(AppDbContext)))
 );
