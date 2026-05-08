@@ -1,15 +1,16 @@
 services:
-  # client:
-  #   container_name: pp.client
-  #   ports:
-  #     - "5000:5000"
-  #   build:
-  #     context: ./site
-  #     dockerfile: ./Dockerfile
-  #   volumes:
-  #     - ./:/site
-  #   depends_on:
-  #     - api
+  client:
+    container_name: pp.client
+    ports:
+      - "5173:5173"
+    build:
+      context: ./site
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./site:/site
+    depends_on:
+      - api
+      
   api:
     container_name: pp.server
     ports:
