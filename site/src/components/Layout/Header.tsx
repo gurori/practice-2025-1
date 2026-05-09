@@ -14,7 +14,7 @@ const links = [
 
 export default function Header({currentPage} : Props) {
     return (
-      <header className="fixed w-full bg-white">
+      <header className="fixed w-full bg-white z-50">
         <div className="container flex place-content-between py-4">
           <Link to={PAGES.HOME}>
             <b>Проектная Практика 2026</b>
