@@ -1,25 +1,8 @@
 import Layout from "@/components/Layout/Layout";
+import { features } from "@/consts/features";
 import { PAGES } from "@/consts/pages";
-import { ArrowRight, BookOpenText, BrainCircuit, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const features = [
-  {
-    icon: BookOpenText,
-    title: "Корпусная база",
-    text: "Словарь опирается на реальные тексты, а не только на традиционные словарные пометы.",
-  },
-  {
-    icon: BrainCircuit,
-    title: "Живой анализ",
-    text: "Показывает, как слово реально функционирует в речи, жанрах и коммуникативных ситуациях.",
-  },
-  {
-    icon: Sparkles,
-    title: "Стилевой подсказчик",
-    text: "Помогает определить стилевую доминанту текста и оценить уместность языковых средств.",
-  },
-];
 
 export default function HomePage() {
   return (
