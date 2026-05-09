@@ -61,10 +61,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid gap-6 border rounded-[28px] border-slate-200">
-            <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-soft">
+          <div className="grid gap-6">
+            <div className="h-80 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-soft">
               <img
-                src="/images/home_page.png"
+                src="/images/hero_home.png"
                 alt="Работа с языковыми данными"
                 className="h-80 w-full object-cover"
               />
