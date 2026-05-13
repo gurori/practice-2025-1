@@ -9,8 +9,11 @@ export default function ProjectPage() {
         <p>
           Техническое руководство по созданию API для заметок на ASP.NET Core.
         </p>
-        <a href="https://github.com/gurori/practice-2025-1/blob/master/docs/README.md" className="underline">
-          Открыть отчёт
+        <a
+          href="https://github.com/gurori/practice-2025-1/blob/master/docs/README.md"
+          className="underline"
+        >
+          Открыть документацию
         </a>
       </section>
     </Layout>
