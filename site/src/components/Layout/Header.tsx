@@ -10,6 +10,7 @@ const links = [
   { label: "Участники", to: PAGES.PARTICIPANTS },
   { label: "Журнал", to: PAGES.JOURNAL },
   { label: "Ресурсы", to: PAGES.RESOURCES },
+  { label: "ПРОЕКТ", to: PAGES.PROJECT },
 ];
 
 export default function Header({currentPage} : Props) {

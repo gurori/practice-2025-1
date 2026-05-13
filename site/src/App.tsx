@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import JournalPage from "./pages/JournalPage";
 import ParticipantsPage from "./pages/ParticipantsPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path={PAGES.JOURNAL} element={<JournalPage />} />
       <Route path={PAGES.PARTICIPANTS} element={<ParticipantsPage />} />
       <Route path={PAGES.RESOURCES} element={<ResourcesPage />} />
+      <Route path={PAGES.PROJECT} element={<ProjectPage />} />
     </Routes>
   );
 }
